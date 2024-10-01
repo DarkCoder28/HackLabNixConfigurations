@@ -1,0 +1,53 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "display": {
+        "size": {
+            "maxPrefix": "GB",
+            "ndigits": 0
+        }
+    },
+    "modules": [
+        "title",                                            // agsheeran@aidonix
+        "separator",                                        // -----------------
+        "os",                                               // OS: NixOS 24.05.20240505.25865a4 (Uakari) x86_64
+        "host",                                             // Host: OMEN by HP Laptop 15t-dc100
+        "kernel",                                           // Kernel: 6.6.30
+        "uptime",                                           // Uptime: 3 hours, 48 mins
+        "packages",                                         // Packages: 2057 (nix-system), 1663 (nix-user)
+        "shell",                                            // Shell: bash 5.2.26
+        {                                                   // Resolution: 1920x1080 @ 60Hz, 1920x1080 @ 60Hz
+            "type": "display",
+            "compactType": "original-with-refresh-rate",
+            "key": "Resolution"
+        },
+        "de",                                               // DE: none+qtile
+        "wm",                                               // WM: LG3D (X11)
+        "theme",                                            // Theme: Adwaita-dark [GTK2/3/4]
+        "icons",                                            // Icons: breeze-dark [GTK2/3/4]
+        "terminal",                                         // Terminal: kitty 0.34.1
+        {                                                   // Terminal Font: JetBrainsMonoNF-Regular 11
+            "type": "terminalfont",
+            "format": "{/2}{-}{/}{2}{?3} {3}{?}"
+        },
+        {                                                   // CPU: Intel(R) Core(TM) i7-9750H (12) @ 4.5GHz [69.0°C]
+            "type": "cpu",
+            "temp": true,
+            "format": "{1} ({4}) @ {7}GHz [{8}]"
+        },
+        {                                                   // Theme: Adwaita-dark [GTK2/3/4]
+            "type": "gpu",
+            "key": "GPU"
+        },
+        {                                                   // Memory: 4.13 GiB / 31.23 GiB (13%)
+            "type": "memory",
+            "format": "{/1}{-}{/}{/2}{-}{/}{} / {} ({3})"
+        },
+        {                                                   // Disk (/): 679.48 GiB / 1827.78 GiB (37%)
+            "type": "disk",
+            "key": "Disk ({1})",
+            "format": "{1} / {2} ({3})"
+        },
+        "break",                                            // ████████████████████████
+        "colors"                                            // ████████████████████████
+    ]
+}

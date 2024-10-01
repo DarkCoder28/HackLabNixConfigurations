@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"esptool",
+			"Flatpak",
+			"LAPCE",
+			"minicom",
+			"neofetch",
+			"picocom",
+			"tenki"
+		]
+	}
+}
