@@ -10,6 +10,7 @@
     libtpms
     swtpm
     virtiofsd
+    vagrant
   ];
   virtualisation.libvirtd = {
     enable = true;
