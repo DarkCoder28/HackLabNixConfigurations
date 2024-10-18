@@ -8,5 +8,6 @@
     ./update-system.nix
     ./icat.nix
     ./shred_history.nix
+    ./matrix.nix
   ];
 }
