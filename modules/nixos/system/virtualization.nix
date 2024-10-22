@@ -5,7 +5,7 @@
 }: {
   environment.systemPackages = with pkgs; [
     libtpms
-    qemu_kvm
+    # qemu_kvm
     virtiofsd
     libtpms
     swtpm
@@ -16,6 +16,7 @@
     host = {
       enable = true;
       enableKvm = true;
+      addNetworkInterface = false;
     };
     guest.enable = true;
   };
