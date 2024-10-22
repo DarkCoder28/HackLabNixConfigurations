@@ -12,11 +12,18 @@
     virtiofsd
     vagrant
   ];
-  virtualisation.libvirtd = {
-    enable = true;
-    qemu.swtpm.enable = true;
-    qemu.package = pkgs.qemu_kvm;
-    # qemu.ovmf.packages = [pkgs.OVMFFull];
+  virtualisation.virtualbox = {
+    host = {
+      enable = true;
+      enableKvm = true;
+    };
+    guest.enable = true;
   };
-  programs.virt-manager.enable = true;
+  # virtualisation.libvirtd = {
+  #   enable = true;
+  #   qemu.swtpm.enable = true;
+  #   qemu.package = pkgs.qemu_kvm;
+  #   # qemu.ovmf.packages = [pkgs.OVMFFull];
+  # };
+  # programs.virt-manager.enable = true;
 }
