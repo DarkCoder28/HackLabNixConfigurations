@@ -55,6 +55,7 @@
       "qemu"
       "docker"
       "tss"
+      "vboxusers"
     ];
   };
   home-manager = {
